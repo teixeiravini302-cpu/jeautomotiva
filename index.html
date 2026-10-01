@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>J.E Automotiva · Lavagem de carro no seu endereço</title>
+<meta name="description" content="Lavagem externa, interna e completa no domicílio do proprietário. Externa R$ 35, interna R$ 40, completa R$ 50. Chame no WhatsApp (47) 99640-7896.">
+<meta property="og:title" content="J.E Automotiva · Lavagem no seu endereço">
+<meta property="og:description" content="Externa R$ 35 · Interna R$ 40 · Completa R$ 50. Agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F6F9; --card:#FFFFFF; --ink:#0F2236; --muted:#53667A; --line:#D3DDE5; --accent:#0B6FB8; --accent-ink:#FFFFFF; --gold:#F5B335; --wa:#128C4A;
+  --head:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Barlow",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0D1722;--card:#15232F;--ink:#EEF3F7;--muted:#9BAEBD;--line:#273847;--accent:#4DB0F0;--accent-ink:#06223A}
+}
+:root[data-theme="dark"]{--bg:#0D1722;--card:#15232F;--ink:#EEF3F7;--muted:#9BAEBD;--line:#273847;--accent:#4DB0F0;--accent-ink:#06223A}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--head);font-weight:700;font-size:26px;letter-spacing:.02em;text-decoration:none}
+nav{display:flex;gap:20px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:56px 0}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding:40px 0}}
+h1{font-family:var(--head);font-weight:700;font-size:clamp(46px,9vw,84px);line-height:.95;margin:0 0 20px;
+  background:linear-gradient(100deg,var(--ink) 0 40%,var(--accent) 50%,var(--ink) 60% 100%);background-size:300% 100%;background-position:100% 0;
+  -webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 1.8s .3s ease-out forwards}
+@keyframes sweep{to{background-position:0 0}}
+@media (prefers-reduced-motion:reduce){h1{animation:none;background:none;color:var(--ink)}html{scroll-behavior:auto}}
+.lead{max-width:44ch;color:var(--muted);font-size:19px;margin:0 0 20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-weight:500;font-size:15px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;padding:14px 22px;border-radius:8px}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);margin-left:8px}
+@media (max-width:420px){.btn.ghost{margin:10px 0 0}}
+.art svg{width:100%;height:auto;display:block}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--head);font-size:clamp(32px,6vw,44px);line-height:1;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 24px}
+.prices{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;background:var(--card);overflow:hidden}
+.prices li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 22px;border-bottom:1px solid var(--line)}
+.prices li:last-child{border-bottom:0;border-left:6px solid var(--gold)}
+.prices strong{font-family:var(--head);font-size:28px;font-weight:700;display:block;line-height:1.1}
+.prices span{color:var(--muted);font-size:15px}
+.price{font-family:var(--head);font-weight:700;font-size:40px;white-space:nowrap}
+.price small{font-size:20px;margin-right:4px}
+.tag{display:inline-block;background:var(--gold);color:#3A2800;font-size:13px;font-weight:600;padding:2px 8px;border-radius:4px;margin-left:8px;vertical-align:middle}
+.note{color:var(--muted);font-size:15px;margin-top:14px}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:18px}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start}
+.steps li::before{content:counter(s);flex:none;width:38px;height:38px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-family:var(--head);font-weight:700;font-size:22px;display:grid;place-items:center}
+.steps b{display:block;font-family:var(--head);font-size:22px;line-height:1.2}
+.steps span{color:var(--muted)}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600;font-size:18px}
+details p{margin:10px 0 0;color:var(--muted)}
+.contact{display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center}
+.contact p{margin:0}
+.big{font-family:var(--head);font-weight:700;font-size:36px;text-decoration:none}
+footer{padding:28px 0 96px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--wa);color:#fff;text-decoration:none;font-weight:600;padding:14px 20px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25);display:flex;gap:8px;align-items:center}
+.fab svg{width:22px;height:22px;fill:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="#">J.E Automotiva</a>
+    <nav aria-label="Principal"><a href="#valores">Valores</a><a href="#como">Como funciona</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Lavamos seu carro em casa.</h1>
+        <p class="lead">Atendimento no domicílio do proprietário. Escolha o tipo de lavagem e agende pelo WhatsApp.</p>
+        <ul class="chips"><li>Externa R$ 35</li><li>Interna R$ 40</li><li>Completa R$ 50</li></ul>
+        <a class="btn wa" href="#">Agendar no WhatsApp</a>
+        <a class="btn ghost" href="#valores">Ver valores</a>
+      </div>
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="210" cy="110" r="100" fill="var(--accent)" opacity=".12"/>
+          <path d="M40 150 q4-34 40-40 l50-4 q20-34 60-36 h60 q40 2 60 36 l36 8 q26 6 28 36 v10 H40z" fill="var(--accent)"/>
+          <path d="M146 104 q14-26 48-28 h40 q30 2 46 28z" fill="var(--bg)" opacity=".9"/>
+          <rect x="203" y="76" width="5" height="28" fill="var(--accent)"/>
+          <circle cx="116" cy="162" r="26" fill="var(--ink)"/><circle cx="116" cy="162" r="11" fill="var(--bg)"/>
+          <circle cx="316" cy="162" r="26" fill="var(--ink)"/><circle cx="316" cy="162" r="11" fill="var(--bg)"/>
+          <path d="M20 190 H400" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+          <g fill="var(--gold)"><circle cx="86" cy="60" r="7"/><circle cx="332" cy="48" r="9"/><circle cx="360" cy="86" r="5"/><circle cx="62" cy="96" r="5"/></g>
+        </svg>
+      </div>
+    </div>
+
+    <section id="valores">
+      <h2>Valores da lavagem</h2>
+      <p class="sub">Preço por carro, com atendimento no seu endereço.</p>
+      <ul class="prices">
+        <li><div><strong>Externa</strong><span>Lavagem da parte de fora</span></div><div class="price"><small>R$</small>35</div></li>
+        <li><div><strong>Interna</strong><span>Limpeza do interior</span></div><div class="price"><small>R$</small>40</div></li>
+        <li><div><strong>Completa<span class="tag">Melhor valor</span></strong><span>Externa e interna juntas</span></div><div class="price"><small>R$</small>50</div></li>
+      </ul>
+      <p class="note">Na lavagem completa você paga R$ 25 a menos do que contratando externa e interna separadas.</p>
+    </section>
+
+    <section id="como">
+      <h2>Como funciona</h2>
+      <p class="sub">Do pedido à lavagem, sem sair de casa.</p>
+      <ol class="steps">
+        <li><div><b>Chame no WhatsApp</b><span>Diga qual lavagem você quer e onde o carro está.</span></div></li>
+        <li><div><b>Combine o horário</b><span>Confirmamos o dia e a hora com você.</span></div></li>
+        <li><div><b>Lavamos no seu endereço</b><span>O carro fica com você, em casa.</span></div></li>
+      </ol>
+    </section>
+
+    <section id="duvidas">
+      <h2>Dúvidas comuns</h2>
+      <p class="sub">&nbsp;</p>
+      <details><summary>Onde vocês atendem?</summary><p>Atendemos no domicílio do proprietário. Envie sua localização no WhatsApp para confirmar a disponibilidade.</p></details>
+      <details><summary>Qual a diferença entre as lavagens?</summary><p>A externa limpa a parte de fora do carro, a interna cuida do interior e a completa faz as duas.</p></details>
+      <details><summary>Como agendo?</summary><p>Pelo WhatsApp (47) 99640-7896. É só escolher o tipo de lavagem e combinar o horário.</p></details>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p class="sub">Chame no WhatsApp para agendar.</p>
+      <div class="contact">
+        <p><a class="big wa" href="#">(47) 99640-7896</a></p>
+        <p><a class="btn wa" href="#">Pedir orçamento</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© J.E Automotiva · Lavagem no domicílio</footer>
+</div>
+
+<a class="fab wa" href="#" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.2-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.800 11.800 0 0 0 4.600 4c1.700.7 2.400.8 3.200.700.5-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+  var NUMERO = "5547996407896";
+  var msg = encodeURIComponent("Olá! Gostaria de agendar uma lavagem.");
+  document.querySelectorAll("a.wa").forEach(function(a){
+    a.href = "https://wa.me/" + NUMERO + "?text=" + msg; a.target = "_blank"; a.rel = "noopener";
+  });
+</script>
+</body>
+</html>
